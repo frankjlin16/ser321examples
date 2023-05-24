@@ -1,4 +1,4 @@
-import java.io.*;
+
 /**
  * Purpose: demonstrate simple Java Fraction class with command line,
  * jdb debugging, and Ant build file.

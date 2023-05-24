@@ -1,4 +1,4 @@
-import java.io.*;
+
 /**
  * Purpose: demonstrate simple Java Muliply class with command line,
  * jdb debugging, and Gradle build file.
