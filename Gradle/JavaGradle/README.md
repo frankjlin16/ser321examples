@@ -11,7 +11,7 @@ In your command line go to the folder where the build.gradle file is located.
 Run 'gradle tasks --all' it will show you all available tasks and their description. 
 Especially important: build, clean, run, runApp, runFraction
 
-Take a look at the build.gradle file and run all the different taks and play around with it to understand Gradle better. 
+Take a look at the build.gradle file and run all the different task and play around with it to understand Gradle better. 
 
 
 #2. Compiling and running the debugger from the command line#
