@@ -45,12 +45,8 @@ public class Fraction {
          Fraction frac = new Fraction();
 
          if (args.length == 2) {
-            frac.setNumerator(Integer.parseInt(args[0]));
-            frac.setDenominator(Integer.parseInt(args[1]));
-         } else {
-            // set the values
-            frac.setNumerator(1);
-            frac.setDenominator(3);
+            frac.setNumerator(Integer.parseInt(args[1]));
+            frac.setDenominator(Integer.parseInt(args[0]));
          }
 
          // print it
