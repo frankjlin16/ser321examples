@@ -64,6 +64,27 @@ task runFracArgs(type: JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
 
   main = 'Fraction'
+
+  if (project.hasProperty("denom") && project.hasProperty("num")) {
+    args(project.getProperty('denom'), project.getProperty('num'));
+  }
+}
+
+task runFrac(type: JavaExec) {
+  group 'Fraction Tasks'
+  description 'Tasks which runs Fraction with default parameters'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'Fraction'
+
+  if (project.hasProperty("denom") && project.hasProperty("num")) {
+    args(project.getProperty('denom'), project.getProperty('num'));
+  } else if (project.hasProperty("num")){
+    args(project.getProperty('num'), 1);
+  } else {
+    args(1, 1);
+  }
 }
 
 // Example how you can add that libraries can be pulled from mavenCentral()
